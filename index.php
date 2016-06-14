@@ -63,6 +63,9 @@
 
         <!-- Intro -->
         <?php include_once($local."/intro.php"); ?>
+       
+        <!-- portfolio -->
+        <?php include_once($local."/portfolio.php"); ?>
 
         <!-- Como Fazemos -->
         <?php include_once($local."/comoFazemos.php"); ?>
@@ -73,10 +76,6 @@
 
         <!-- Quem Somos -->
         <?php include_once($local."/quemSomos.php"); ?>
-
-        <!-- portfolio -->
-        <?php include_once($local."/portfolio.php"); ?>
-
 
 
         <!-- Clientes  -->
@@ -155,6 +154,9 @@
         case "logo":
           html+= '<?php include_once("assets/includes/PortfolioPages/logo.php"); ?>';
         break;
+        case "tituloCinza":
+          html+= '<?php include_once("assets/includes/PortfolioPages/tituloCinza.php"); ?>';
+        break;
         case "titulo":
           html+= '<?php include_once("assets/includes/PortfolioPages/titulo.php"); ?>';
         break;
@@ -170,12 +172,16 @@
     
     $("#floatPortfolio").html(html);
 
-    $("#floatPortfolio .banner").html(db.banner);
-    $("#floatPortfolio .logo").html(db.logo);
+    $("#floatPortfolio .banner").css("background-image", "url(images/Portfolio/"+db.banner+")");
+    $("#floatPortfolio .logo img").attr("src", "images/Portfolio/"+db.logo);
     
     for(var a=0; a<db.titulos.length; a++){
       
       $($("#floatPortfolio .titulo").get(a)).html(db.titulos[a]);
+    }
+    for(var a=0; a<db.titulosCinzas.length; a++){
+      
+      $($("#floatPortfolio .tituloCinza").get(a)).html(db.titulosCinzas[a]);
     }
     for(var a=0; a<db.textos.length; a++){
       

@@ -126,22 +126,42 @@
 	left:0;
 	display:none;
 
-	.banner, .imagem, .logo, .titulo{
+	.banner{
 		width:100%;
-		height:200px;
+		height:150px;
 		background-color: red;
+		background-size:cover;
+		background-position:center center;
+	}
+
+	.logo{
+		height:auto;
+		width:100%;
+		text-align: center;
+		padding: 10px 0;
+
+		img{
+			width:90%;
+			height:auto;
+		}
+
 	}
 
 	.imagem{
 		background-color: blue;
 	}
 
-	.logo{
-		background-color: pink;
-	}
-
 	.titulo{
 		background-color: green;
+	}
+
+	.tituloCinza{
+		width:100%;
+		height:auto;
+		font-size: 25px;
+		color:$Titulo-Cor-Cinza;
+		font-weight: 400;
+		text-transform: uppercase;
 	}
 
 }

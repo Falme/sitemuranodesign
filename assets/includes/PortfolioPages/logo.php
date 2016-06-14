@@ -1,1 +1,1 @@
-<div class="logo">dsioujdfsuhdsfuhdsfuhidfuihd</div>
+<div class="logo"><img src="" alt=""></div>

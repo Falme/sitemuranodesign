@@ -3,6 +3,7 @@
 		"ordem" : [
 			"banner", 
 			"logo", 
+			"tituloCinza", 
 			"titulo", 
 			"imagem",
 			"texto", 
@@ -13,9 +14,10 @@
 			"titulo", 
 			"texto"
 			],
-		"banner":"imagemCriancas.png",
-		"logo":"logoCriancas.png",
+		"banner":"portfolio_HCB.png",
+		"logo":"logo_HCB.png",
 		"titulos" :["lorem","ipsum","dolor"],
+		"titulosCinzas" :["Plataforma educacional crianças como parceiras"],
 		"textos" : ["Foi agraciado com o Nobel de Fisiologia ou Medicina de 1930, pela classificação dos grupos sanguíneos, sistema A B O, e foi descobridor do fator RH.",
 				"Landsteiner dedicou-se a comprovar que havia diferenças no sangue de diversos indivíduos. Ele colheu amostras de sangue de diversas pessoas, isolou os glóbulos vermelhos e fez diferentes combinações entre plasma e glóbulos vermelhos, tendo como resultado a aglutinação dos glóbulos em alguns casos, formando grânulos, e em outros não. Landsteiner explicou então por que algumas pessoas morriam depois de transfusões de sangue e outras não. Em 1930 recebeu o Nobel de Fisiologia ou Medicina por este trabalho.",
 				"É recordado também por ter sido um dos proponentes do termo , para as substâncias responsáveis pela aglutinação do sangue"

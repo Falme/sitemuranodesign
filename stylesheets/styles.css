@@ -13592,30 +13592,49 @@ html, body {
   display: none;
 }
 /* line 129, ../sass/pages/portfolio.scss */
-#floatPortfolio .banner, #floatPortfolio .imagem, #floatPortfolio .logo, #floatPortfolio .titulo {
+#floatPortfolio .banner {
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-color: red;
+  background-size: cover;
+  background-position: center center;
 }
-/* line 135, ../sass/pages/portfolio.scss */
+/* line 137, ../sass/pages/portfolio.scss */
+#floatPortfolio .logo {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 143, ../sass/pages/portfolio.scss */
+#floatPortfolio .logo img {
+  width: 90%;
+  height: auto;
+}
+/* line 150, ../sass/pages/portfolio.scss */
 #floatPortfolio .imagem {
   background-color: blue;
 }
-/* line 139, ../sass/pages/portfolio.scss */
-#floatPortfolio .logo {
-  background-color: pink;
-}
-/* line 143, ../sass/pages/portfolio.scss */
+/* line 154, ../sass/pages/portfolio.scss */
 #floatPortfolio .titulo {
   background-color: green;
 }
+/* line 158, ../sass/pages/portfolio.scss */
+#floatPortfolio .tituloCinza {
+  width: 100%;
+  height: auto;
+  font-size: 25px;
+  color: #6B6B6B;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 
 @media (min-width: 768px) {
-  /* line 161, ../sass/pages/portfolio.scss */
+  /* line 181, ../sass/pages/portfolio.scss */
   #ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgSeparador {
     display: block;
   }
-  /* line 165, ../sass/pages/portfolio.scss */
+  /* line 185, ../sass/pages/portfolio.scss */
   #ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgTags {
     display: block;
   }
