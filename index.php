@@ -18,7 +18,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/MuranoDesign-Ico.ico">
 
-    <?php  header("Content-Type: text/html;charset=UTF-8"); ini_set('display_errors', '0'); error_reporting(E_ERROR | E_WARNING | E_PARSE); ?>
+    <?php /* header("Content-Type: text/html;charset=UTF-8"); ini_set('display_errors', '0'); error_reporting(E_ERROR | E_WARNING | E_PARSE);*/ ?>
 
   </head>
   <body>
@@ -78,6 +78,7 @@
         <?php include_once($local."/portfolio.php"); ?>
 
 
+
         <!-- Clientes  -->
         <?php include_once($local."/clientes.php"); ?>
 
@@ -96,6 +97,9 @@
 
 
     </div>
+
+        <!-- Inside portfolio -->
+        <?php include_once($local."/floatPortfolio.php"); ?>
 
 
   <script src="http://maps.googleapis.com/maps/api/js"></script>
@@ -127,6 +131,70 @@
   </script>
 
   <script type="text/javascript" src="scripts/script<?php echo $scripts; ?>.js"></script>
+
+
+<script type="text/javascript">
+
+  function CarregaPortifolio(campo){
+
+   
+    $("#wrapper").css("height","0px");
+    $("#floatPortfolio").css("display","block");
+
+    var dbi = <?php include_once("assets/includes/PortfolioPages/port.json"); ?>;
+
+    var db = dbi[campo];
+
+    var html = "";
+
+    for(var val of db.ordem){
+      switch (val){
+        case "banner":
+          html+= '<?php include_once("assets/includes/PortfolioPages/banner.php"); ?>';
+        break;
+        case "logo":
+          html+= '<?php include_once("assets/includes/PortfolioPages/logo.php"); ?>';
+        break;
+        case "titulo":
+          html+= '<?php include_once("assets/includes/PortfolioPages/titulo.php"); ?>';
+        break;
+        case "texto":
+          html+= '<?php include_once("assets/includes/PortfolioPages/texto.php"); ?>';
+        break;
+        case "imagem":
+          html+= '<?php include_once("assets/includes/PortfolioPages/imagem.php"); ?>';
+        break;
+      }
+    }
+
+    
+    $("#floatPortfolio").html(html);
+
+    $("#floatPortfolio .banner").html(db.banner);
+    $("#floatPortfolio .logo").html(db.logo);
+    
+    for(var a=0; a<db.titulos.length; a++){
+      
+      $($("#floatPortfolio .titulo").get(a)).html(db.titulos[a]);
+    }
+    for(var a=0; a<db.textos.length; a++){
+      
+      $($("#floatPortfolio .texto").get(a)).html(db.textos[a]);
+    }
+
+    for(var a=0; a<db.imagens.length; a++){
+      
+      $($("#floatPortfolio .imagem").get(a)).html(db.imagens[a]);
+    }
+
+    
+    
+  };
+
+
+</script>
+
+
 
   <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->

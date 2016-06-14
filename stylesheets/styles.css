@@ -13553,29 +13553,73 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: calc(100% - 100px);
+  width: calc(100% - 50px);
   transform: translate(-50%, -50%);
 }
 /* line 92, ../sass/pages/portfolio.scss */
+#ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgSeparador {
+  display: none;
+}
+/* line 96, ../sass/pages/portfolio.scss */
 #ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgTitulo {
   color: #fff;
-  font-size: 25px;
+  font-size: 15px;
   font-weight: bold;
 }
-/* line 98, ../sass/pages/portfolio.scss */
+/* line 102, ../sass/pages/portfolio.scss */
 #ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgTags {
   color: #fff;
   font-size: 15px;
+  display: none;
 }
-/* line 105, ../sass/pages/portfolio.scss */
+/* line 110, ../sass/pages/portfolio.scss */
 #ContentPortfolio .col-xs-12 .ImgPortfolioContainer:hover .FiltroImgPortfolio {
   opacity: 0;
 }
-/* line 110, ../sass/pages/portfolio.scss */
+/* line 115, ../sass/pages/portfolio.scss */
 #ContentPortfolio .col-xs-12:nth-last-child(0) .ImgPortfolioContainer, #ContentPortfolio .col-xs-12:nth-last-child(1) .ImgPortfolioContainer {
   margin-bottom: 0;
 }
 
+/* line 120, ../sass/pages/portfolio.scss */
+#floatPortfolio {
+  width: 100%;
+  position: absolute;
+  height: auto;
+  background-color: white;
+  top: 65px;
+  left: 0;
+  display: none;
+}
+/* line 129, ../sass/pages/portfolio.scss */
+#floatPortfolio .banner, #floatPortfolio .imagem, #floatPortfolio .logo, #floatPortfolio .titulo {
+  width: 100%;
+  height: 200px;
+  background-color: red;
+}
+/* line 135, ../sass/pages/portfolio.scss */
+#floatPortfolio .imagem {
+  background-color: blue;
+}
+/* line 139, ../sass/pages/portfolio.scss */
+#floatPortfolio .logo {
+  background-color: pink;
+}
+/* line 143, ../sass/pages/portfolio.scss */
+#floatPortfolio .titulo {
+  background-color: green;
+}
+
+@media (min-width: 768px) {
+  /* line 161, ../sass/pages/portfolio.scss */
+  #ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgSeparador {
+    display: block;
+  }
+  /* line 165, ../sass/pages/portfolio.scss */
+  #ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgTags {
+    display: block;
+  }
+}
 /* line 1, ../sass/pages/clientesCarrousel.scss */
 #clientes {
   width: 100%;

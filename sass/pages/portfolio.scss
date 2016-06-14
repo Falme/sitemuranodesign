@@ -86,18 +86,23 @@
 			  		position: absolute;
 			  		top: 50%;
 			  		left: 50%;
-			  		width: calc(100% - 100px);
+			  		width: calc(100% - 50px);
 			  		transform: translate(-50%,-50%);
+
+			  		.FiltroImgSeparador{
+			  			display:none;
+			  		}
 
 					.FiltroImgTitulo {
 						color: $txt;
-						font-size: 25px;
+						font-size: 15px;
 						font-weight: bold;
 					}
 
 					.FiltroImgTags {
 						color: $txt;
 						font-size: 15px;
+						display:none;
 					}
 				}
 			}
@@ -112,13 +117,79 @@
 	}
 }
 
-@media (min-width: 400px){ 
+#floatPortfolio{
+	width:100%;
+	position:absolute;
+	height:auto;
+	background-color:white;
+	top:65px;
+	left:0;
+	display:none;
+
+	.banner, .imagem, .logo, .titulo{
+		width:100%;
+		height:200px;
+		background-color: red;
+	}
+
+	.imagem{
+		background-color: blue;
+	}
+
+	.logo{
+		background-color: pink;
+	}
+
+	.titulo{
+		background-color: green;
+	}
+
+}
+
+@media (min-width: 768px){ 
 	
+	#ContentPortfolio
+	{
+
+		.col-xs-12 {
+			.ImgPortfolioContainer {
+
+				.FiltroImgPortfolio {
+
+					.FiltroImgInfo {
+
+				  		.FiltroImgSeparador{
+				  			display:block;
+				  		}
+
+						.FiltroImgTags {
+							display:block;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	#floatPortfolio{
+		
+		.banner{
+		}
+
+	}
 	
 }
 
 
-@media (min-width: 768px){ 
+@media (min-width: 992px){ 
 
+	
+	#ContentPortfolio{
+
+	}
+	
+	#floatPortfolio{
+
+	}
 
 }

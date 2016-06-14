@@ -89,11 +89,48 @@ var PageVars = {
 
 
 
+	/* Portfolio */
+
+	var listaPortfolio = [
+		{
+			"nome":"Plataforma educacional amorim lima",
+			"tags":["Plataforma","Web Design"],
+			"ref":"amorim.png",
+			"link":"Amorim",
+			"size":[12,12,6]
+		},
+		{
+			"nome":"Plataforma educacional crianças como parceiras",
+			"tags":["Plataforma", "Web Design", "Objetos Digitais", "Ilustração"],
+			"ref":"criancas.png",
+			"link":"HCB",
+			"size":[12,12,6]
+		},
+		{
+			"nome":"Objetos digitais de aprendizagem",
+			"tags":["Animação", "3D", "Web Design", "Ilustração"],
+			"ref":"objetos.png",
+			"link":"objDigitais",
+			"size":[12,12,4]
+		},
+		{
+			"nome":"Livros digitais",
+			"tags":["Web Design", "Projeto Gráfico", "Motion Design"],
+			"ref":"livros.png",
+			"link":"livrosDigitais",
+			"size":[12,12,4]
+		}
+	];
+
+
+
 /* Init */
 $( document ).ready(function() {
 
 	PageVars.ScrollPosition = $(window).scrollTop();
 	PageVars.WindowWidth = $(window).width();
+
+	initPortfolio();
 
 	$( window ).resize(function() {
 		update();
@@ -106,6 +143,32 @@ $( document ).ready(function() {
 	window.setInterval(update,100);
 
 });
+
+
+function initPortfolio(){
+
+	var html = "";
+
+	for(var val of listaPortfolio){
+
+		html+= '<div class="col-xs-'+val.size[0]+' col-sm-'+val.size[1]+' col-md-'+val.size[2]+'">'+
+				'<div class="ImgPortfolioContainer" onclick="CarregaPortifolio(\''+val.link+'\')">'+
+				'<img src="images/portfolio/'+val.ref+'" height="auto" width="100%" alt="" class="ImgPortfolio">'+
+				'<div class="FiltroImgPortfolio text-center">'+
+				'<div class="FiltroImgInfo">'+
+				'<p class="FiltroImgTitulo text-uppercase">'+val.nome+'</p>'+
+				'<hr class="FiltroImgSeparador">'+
+				'<p class="FiltroImgTags">'+((val.tags).toString()).replace(/,/gi, ", ")+'</p>'+
+				'</div>'+
+				'</div>'+
+				'</div>'+
+				'</div>';
+
+	}
+
+	$(".iconesPortfolio").html(html);
+
+}
 
 
 

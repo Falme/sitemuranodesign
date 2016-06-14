@@ -19,59 +19,14 @@
             <span class="FiltroPortfolio text-uppercase">Motion design</span>
             <span class="FiltroPortfolio text-uppercase">|</span>
             <span class="FiltroPortfolio text-uppercase">Design gráfico</span>
+            <span class="FiltroPortfolio text-uppercase">|</span>
+            <span class="FiltroPortfolio text-uppercase">Todos</span>
           </p>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <div class="ImgPortfolioContainer">
-          <img src="images/portfolio/amorim.png" height="auto" width="100%" alt="" class="ImgPortfolio">
-          <div class="FiltroImgPortfolio text-center">
-            <div class="FiltroImgInfo">
-              <p class="FiltroImgTitulo text-uppercase">Plataforma educacional amorim lima</p>
-              <hr class="FiltroImgSeparador">
-              <p class="FiltroImgTags">Plataforma, Web Design</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="ImgPortfolioContainer">
-          <img src="images/portfolio/criancas.png" height="auto" width="100%" alt="" class="ImgPortfolio">
-          <div class="FiltroImgPortfolio text-center">
-            <div class="FiltroImgInfo">
-              <p class="FiltroImgTitulo text-uppercase">Plataforma educacional crianças como parceiras</p>
-              <hr class="FiltroImgSeparador">
-              <p class="FiltroImgTags">Plataforma, Web Design, Objetos Digitais, Ilustração</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="ImgPortfolioContainer">
-          <img src="images/portfolio/objetos.png" height="auto" width="100%" alt="" class="ImgPortfolio">
-          <div class="FiltroImgPortfolio text-center">
-            <div class="FiltroImgInfo">
-              <p class="FiltroImgTitulo text-uppercase">Objetos digitais de aprendizagem</p>
-              <hr class="FiltroImgSeparador">
-              <p class="FiltroImgTags">Animação, 3D, Web Design, Ilustração</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="ImgPortfolioContainer">
-          <img src="images/portfolio/livros.png" height="auto" width="100%" alt="" class="ImgPortfolio">
-          <div class="FiltroImgPortfolio text-center">
-            <div class="FiltroImgInfo">
-              <p class="FiltroImgTitulo text-uppercase">Livros digitais</p>
-              <hr class="FiltroImgSeparador">
-              <p class="FiltroImgTags">Web Design, Projeto Gráfico, Motion Design</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="row iconesPortfolio">
+      
     </div>
   </div>
 </div>
