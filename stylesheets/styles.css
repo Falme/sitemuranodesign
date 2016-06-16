@@ -13583,58 +13583,137 @@ html, body {
 
 /* line 120, ../sass/pages/portfolio.scss */
 #floatPortfolio {
-  width: 100%;
+  /* width:100%; */
   position: absolute;
   height: auto;
   background-color: white;
   top: 65px;
   left: 0;
-  display: none;
+  /* display:none; */
+  overflow-x: hidden;
 }
-/* line 129, ../sass/pages/portfolio.scss */
+/* line 130, ../sass/pages/portfolio.scss */
 #floatPortfolio .banner {
-  width: 100%;
+  /* width:100%; */
   height: 150px;
-  background-color: red;
   background-size: cover;
   background-position: center center;
 }
 /* line 137, ../sass/pages/portfolio.scss */
 #floatPortfolio .logo {
   height: auto;
-  width: 100%;
+  /* width:100%; */
   text-align: center;
   padding: 10px 0;
+  margin: 10px 0;
 }
-/* line 143, ../sass/pages/portfolio.scss */
+/* line 144, ../sass/pages/portfolio.scss */
 #floatPortfolio .logo img {
   width: 90%;
   height: auto;
 }
-/* line 150, ../sass/pages/portfolio.scss */
+/* line 151, ../sass/pages/portfolio.scss */
 #floatPortfolio .imagem {
-  background-color: blue;
+  text-align: center;
+  margin: 10px 0;
 }
-/* line 154, ../sass/pages/portfolio.scss */
-#floatPortfolio .titulo {
-  background-color: green;
-}
-/* line 158, ../sass/pages/portfolio.scss */
-#floatPortfolio .tituloCinza {
+/* line 155, ../sass/pages/portfolio.scss */
+#floatPortfolio .imagem img {
   width: 100%;
   height: auto;
-  font-size: 25px;
+}
+/* line 161, ../sass/pages/portfolio.scss */
+#floatPortfolio .titulo {
+  color: #E77108;
+  margin: 10px 0 0px;
+  font-size: 18px;
+}
+/* line 168, ../sass/pages/portfolio.scss */
+#floatPortfolio .tituloCinza {
+  /* width:100%; */
+  height: auto;
+  font-size: 18px;
   color: #6B6B6B;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 10px 0 0px;
+}
+/* line 178, ../sass/pages/portfolio.scss */
+#floatPortfolio .texto {
+  height: auto;
+  margin: 10px 0;
+}
+/* line 183, ../sass/pages/portfolio.scss */
+#floatPortfolio .btnSair {
+  height: 40px;
+  background-color: green;
+  margin: 10px 0;
+  text-align: center;
+  padding-top: 5px;
+  color: #FFF;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* line 196, ../sass/pages/portfolio.scss */
+#floatPortfolio .slider {
+  height: auto;
+  margin: 10px 0;
+}
+/* line 200, ../sass/pages/portfolio.scss */
+#floatPortfolio .slider * {
+  padding: 0;
+}
+/* line 202, ../sass/pages/portfolio.scss */
+#floatPortfolio .slider .menuSuperior {
+  height: 20px;
+  background-color: blue;
+}
+/* line 208, ../sass/pages/portfolio.scss */
+#floatPortfolio .slider .arrow {
+  height: 100px;
+  background-image: url("../images/setaMobile.png");
+  background-position: 25%, center;
+  background-size: 45% auto;
+  background-repeat: no-repeat;
+}
+/* line 215, ../sass/pages/portfolio.scss */
+#floatPortfolio .slider .arrow.left {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 222, ../sass/pages/portfolio.scss */
+#floatPortfolio .slider .slideShow {
+  height: auto;
+  background-color: pink;
+  overflow-x: hidden;
+}
+/* line 227, ../sass/pages/portfolio.scss */
+#floatPortfolio .slider .slideShow .wrapperSlide {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+/* line 232, ../sass/pages/portfolio.scss */
+#floatPortfolio .slider .slideShow .wrapperSlide img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+/* line 240, ../sass/pages/portfolio.scss */
+#floatPortfolio .slider .comment {
+  height: auto;
+  background-color: #EDEDED;
+  padding: 10px;
 }
 
 @media (min-width: 768px) {
-  /* line 181, ../sass/pages/portfolio.scss */
+  /* line 262, ../sass/pages/portfolio.scss */
   #ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgSeparador {
     display: block;
   }
-  /* line 185, ../sass/pages/portfolio.scss */
+  /* line 266, ../sass/pages/portfolio.scss */
   #ContentPortfolio .col-xs-12 .ImgPortfolioContainer .FiltroImgPortfolio .FiltroImgInfo .FiltroImgTags {
     display: block;
   }

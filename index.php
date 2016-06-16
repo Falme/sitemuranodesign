@@ -140,6 +140,10 @@
     $("#wrapper").css("height","0px");
     $("#floatPortfolio").css("display","block");
 
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+
     var dbi = <?php include_once("assets/includes/PortfolioPages/port.json"); ?>;
 
     var db = dbi[campo];
@@ -157,6 +161,9 @@
         case "tituloCinza":
           html+= '<?php include_once("assets/includes/PortfolioPages/tituloCinza.php"); ?>';
         break;
+        case "slide":
+          html+= '<?php include_once("assets/includes/PortfolioPages/slider.php"); ?>';
+        break;
         case "titulo":
           html+= '<?php include_once("assets/includes/PortfolioPages/titulo.php"); ?>';
         break;
@@ -166,32 +173,80 @@
         case "imagem":
           html+= '<?php include_once("assets/includes/PortfolioPages/imagem.php"); ?>';
         break;
+        case "Sair":
+          html+= '<?php include_once("assets/includes/PortfolioPages/sair.php"); ?>';
+        break;
       }
     }
 
     
     $("#floatPortfolio").html(html);
 
+    $("#floatPortfolio .wrapperSlide").html("");
+
     $("#floatPortfolio .banner").css("background-image", "url(images/Portfolio/"+db.banner+")");
     $("#floatPortfolio .logo img").attr("src", "images/Portfolio/"+db.logo);
-    
-    for(var a=0; a<db.titulos.length; a++){
+
+    $("#floatPortfolio .slider .comment").html(db.slides[0].descricao);
+
+
+    PageVars.SliderPortfolioLimite = db.slides.length;
+
+    var lng = Math.max(db.titulos.length,db.titulosCinzas.length,db.textos.length,db.imagens.length,db.slides.length);
+
+
+    for(var a=0; a<lng;a++){
+
+      if(a < db.titulos.length)
+        $($("#floatPortfolio .titulo").get(a)).html(db.titulos[a]);
       
-      $($("#floatPortfolio .titulo").get(a)).html(db.titulos[a]);
-    }
-    for(var a=0; a<db.titulosCinzas.length; a++){
+      if(a < db.titulosCinzas.length)
+        $($("#floatPortfolio .tituloCinza").get(a)).html(db.titulosCinzas[a]);
       
-      $($("#floatPortfolio .tituloCinza").get(a)).html(db.titulosCinzas[a]);
-    }
-    for(var a=0; a<db.textos.length; a++){
+      if(a < db.textos.length)
+        $($("#floatPortfolio .texto").get(a)).html(db.textos[a]);
       
-      $($("#floatPortfolio .texto").get(a)).html(db.textos[a]);
+      if(a < db.imagens.length)
+        $($("#floatPortfolio .imagem").get(a)).find("img").attr("src", "images/Portfolio/"+db.imagens[a]);
+      
+      if(a < db.slides.length){
+        $("#floatPortfolio .slider .wrapperSlide").append('<img src="" alt="">');
+        $($("#floatPortfolio .slider .wrapperSlide img").get(a)).attr("src", "images/Portfolio/"+db.slides[a].imagem);
+        $($("#floatPortfolio .slider .wrapperSlide img").get(a)).css("width",(100/(db.slides.length))+"%");
+      }
     }
 
-    for(var a=0; a<db.imagens.length; a++){
+    $("#floatPortfolio .slider .wrapperSlide").css("width",((db.slides.length)*100)+"%");
+
+
+
+    $("#floatPortfolio .slider .arrow").click(function(){
+
+      var direcao = ($(this).attr("class")).split(" ");
+
+      if(direcao[2] == "left")
+        PageVars.SliderPortfolioPos--;
+      else 
+        PageVars.SliderPortfolioPos++;
+        
       
-      $($("#floatPortfolio .imagem").get(a)).html(db.imagens[a]);
-    }
+
+
+      if(PageVars.SliderPortfolioPos == PageVars.SliderPortfolioLimite){
+        PageVars.SliderPortfolioPos = 0;
+      } else if(PageVars.SliderPortfolioPos == -1){
+        PageVars.SliderPortfolioPos = PageVars.SliderPortfolioLimite-1;
+      }
+
+      $("#floatPortfolio .slider .slideShow .wrapperSlide").css("left",((PageVars.SliderPortfolioPos*100)*-1)+"%");
+
+      $("#floatPortfolio .slider .comment").html(db.slides[PageVars.SliderPortfolioPos].descricao);
+    });
+
+
+   
+
+
 
     
     

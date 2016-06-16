@@ -1,1 +1,1 @@
-<div class="tituloCinza"></div>
+<div class="col-xs-push-1 col-xs-10 tituloCinza"></div>

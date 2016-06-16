@@ -34,7 +34,9 @@ var PageVars = {
 	"AncoraAtual" : "",
 	"curvaExercicios" : [],
     "curvaNum" : [12, 12, 18,10,7,13,14],
-    "curvaForm" : [1,2,3,4,5,6,7]
+    "curvaForm" : [1,2,3,4,5,6,7],
+    "SliderPortfolioPos": 0,
+    "SliderPortfolioLimite": 0
 };
 
 
@@ -259,7 +261,11 @@ $("#HamburgerIcon").click(function(){
 
 });
 
+/*window.onbeforeunload = function() {
 
+return false;
+
+}*/
 
 
 
@@ -284,6 +290,8 @@ $("#HamburgerIcon").click(function(){
 
 
 
+		$("#wrapper").css("height","auto");
+    	$("#floatPortfolio").css("display","none");
 
 		$('html, body').animate({
 			scrollTop: ($('#Ancora'+IDMenuEscolhido[1]).offset().top - $('#Menu').height() - 25)
@@ -1074,3 +1082,4 @@ function VerificaColisao(obj1, obj2){
     console.log(pointsa, pointsb);
     return doPolygonsIntersect(pointsb, pointsa);
 };
+

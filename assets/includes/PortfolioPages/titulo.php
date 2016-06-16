@@ -1,1 +1,1 @@
-<div class="titulo">dsioujdfsuhdsfuhdsfuhidfuihd</div>
+<div class="col-xs-push-1 col-xs-10 titulo">dsioujdfsuhdsfuhdsfuhidfuihd</div>

@@ -1,4 +1,4 @@
-<div id="floatPortfolio">
+<div class="row" id="floatPortfolio">
 	
 </div>
 

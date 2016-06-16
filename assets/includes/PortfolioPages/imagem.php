@@ -1,1 +1,1 @@
-<div class="imagem">dsioujdfsuhdsfuhdsfuhidfuihd</div>
+<div class="col-xs-push-1 col-xs-10 imagem"><img src="" alt=""></div>
