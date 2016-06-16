@@ -94,21 +94,21 @@ var PageVars = {
 	/* Portfolio */
 
 	var listaPortfolio = [
-		{
+		/*{
 			"nome":"Plataforma educacional amorim lima",
 			"tags":["Plataforma","Web Design"],
 			"ref":"amorim.png",
 			"link":"Amorim",
 			"size":[12,12,6]
-		},
+		},*/
 		{
 			"nome":"Plataforma educacional crianças como parceiras",
 			"tags":["Plataforma", "Web Design", "Objetos Digitais", "Ilustração"],
 			"ref":"criancas.png",
 			"link":"HCB",
 			"size":[12,12,6]
-		},
-		{
+		}
+		/*{
 			"nome":"Objetos digitais de aprendizagem",
 			"tags":["Animação", "3D", "Web Design", "Ilustração"],
 			"ref":"objetos.png",
@@ -121,7 +121,7 @@ var PageVars = {
 			"ref":"livros.png",
 			"link":"livrosDigitais",
 			"size":[12,12,4]
-		}
+		}*/
 	];
 
 
@@ -292,6 +292,8 @@ return false;
 
 		$("#wrapper").css("height","auto");
     	$("#floatPortfolio").css("display","none");
+
+    	//console.log('#AncoraPortfolio');
 
 		$('html, body').animate({
 			scrollTop: ($('#Ancora'+IDMenuEscolhido[1]).offset().top - $('#Menu').height() - 25)

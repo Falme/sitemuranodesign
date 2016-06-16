@@ -80,7 +80,7 @@
 				<div class="infograficoItem noBottom">
 					<img src="images/Info3.png" alt="img07" id="img07"/>
 					<p class="titulo">Prototipagem</p>
-					<p id="infoParag7">Experimentações que validam as idéias, passando-as do abstrato para o físico ou para uma experiência com o usuário.</p>
+					<p id="infoParag7">Experimentações que validam as ideias, passando-as do abstrato para o físico ou para uma experiência com o usuário.</p>
 				</div>
 			</div>
 		</div>

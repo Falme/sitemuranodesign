@@ -244,6 +244,16 @@
     });
 
 
+    $("#floatPortfolio .btnSair").click(function(){
+
+      $("#wrapper").css("height","auto");
+      $("#floatPortfolio").css("display","none");
+
+      $('html, body').animate({
+        scrollTop: ($('#AncoraPortfolio').offset().top - $('#Menu').height() - 25)
+      }, 500);
+
+    });
    
 
 
