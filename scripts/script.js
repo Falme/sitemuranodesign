@@ -61,7 +61,7 @@ var PageVars = {
 				{"Nome":"Nilton",		"NomeCompleto":"Nilton Leme",			"X": [(222-55)+"","185"],		"Y":["271","167"],	"Width":["110","135"],	"Texto":"Nosso cara de TI, que também coloca a mão na massa quando o assunto é negócio."	},
 				{"Nome":"Carol",		"NomeCompleto":"Carol Ferreira",		"X": [(806-55)+"","397"],		"Y":["438","283"],	"Width":["145","162"],	"Texto":"Essa mineirinha é fera em linguagem de programação. Comprometida, faz a diferença em todos os projetos que participa."	},
 				{"Nome":"Pedro",		"NomeCompleto":"Pedro Henrique",		"X": [(360-55)+"","210"],		"Y":["435","375"],	"Width":["100","157"],	"Texto":"O menino do Debugger, mestre no CookieClicker, ta mt frio to bolado"	},
-				{"Nome":"Fernando",		"NomeCompleto":"Kevyn Miranda",			"X": [(813-55)+"","567"],		"Y":["466","418"],	"Width":["200","138"],	"Texto":"Jovem <i>padawan</i> das artes milenares e ocultas da programação. Poliglota em <i>coding</i>, com fluência em Java, C#, C e ‘imbromeition’ em vb6 e javascript."	},
+				{"Nome":"Fernando",		"NomeCompleto":"Fernando Siniscalchi",			"X": [(813-55)+"","567"],		"Y":["466","418"],	"Width":["200","138"],	"Texto":"Jovem <i>padawan</i> das artes milenares e ocultas da programação. Poliglota em <i>coding</i>, com fluência em Java, C#, C e ‘imbromeition’ em vb6 e javascript."	},
 				{"Nome":"Bruno",		"NomeCompleto":"Bruno Ahn",				"X": [(428-55)+"","200"],		"Y":["613","571"],	"Width":["125","106"],	"Texto":"Aprende tudo muito rápido e está sempre atento. Designer versátil, gosta de produção audiovisual, diagramação e programação."	},
 				{"Nome":"Diego",		"NomeCompleto":"Diego Garcia",			"X": [(479-55)+"","364"],		"Y":["10","15"],	"Width":["180","189"],	"Texto":"Imaginativo e apaixonado, gosta de presenciar pequenos milagres que fazem um código funcionar."	},
 				{"Nome":"Rogerio",		"NomeCompleto":"Rogério Santos",		"X": [(700-55)+"","491"],		"Y":["580","849"],	"Width":["125","208"],	"Texto":"Nosso arquiteto de soluções. Profissional incansável na busca de novas tecnologias. Conectado 24 horas por dia, entusiasma a todos em cada projeto que participa."	},
@@ -889,20 +889,23 @@ function resetMapGoogle(){
 		var selected = "";
 
 
-		if(scrollTop >= $("#AncoraContato").offset().top){
-			selected = "Contato";
-		} else if(scrollTop >= $("#AncoraClientes").offset().top){
-			selected = "Clientes";
-		} else if(scrollTop >= $("#AncoraPortfolio").offset().top){
-			selected = "Portfolio";
-		} else if(scrollTop >= $("#AncoraSomos").offset().top){
-			selected = "Somos";
-		} else if(scrollTop >= $("#AncoraQueFazemos").offset().top){
-			selected = "QueFazemos";
-		} else if(scrollTop >= $("#AncoraComoFazemos").offset().top){
-			selected = "ComoFazemos";
-		} else {
-			selected = "";
+		if(!$("#floatPortfolio").is(":visible")){
+
+			if(scrollTop >= $("#AncoraContato").offset().top){
+				selected = "Contato";
+			} else if(scrollTop >= $("#AncoraClientes").offset().top){
+				selected = "Clientes";
+			} else if(scrollTop >= $("#AncoraSomos").offset().top){
+				selected = "Somos";
+			} else if(scrollTop >= $("#AncoraQueFazemos").offset().top){
+				selected = "QueFazemos";
+			} else if(scrollTop >= $("#AncoraComoFazemos").offset().top){
+				selected = "ComoFazemos";
+			} else if(scrollTop >= $("#AncoraPortfolio").offset().top){
+				selected = "Portfolio";
+			} else {
+				selected = "";
+			}
 		}
 
 

@@ -5,6 +5,7 @@
 			"logo", 
 			"tituloCinza", 
 			"texto", 
+			"texto", 
 			"imagem",
 			"titulo", 
 			"texto", 
@@ -13,47 +14,50 @@
 			"titulo", 
 			"slide",
 			"texto", 
+			"texto", 
 			"Sair"
 			],
 		"banner":"portfolio_HCB.png",
 		"logo":"logo_HCB.png",
 		"titulos" :["Plataforma","Atividades"],
 		"titulosCinzas" :["Plataforma educacional crianças como parceiras"],
-		"textos" : ["Tornar atrativo um conteúdo para crianças sobre estilo e hábitos de vida saudável, com o objetivo de prevenir o câncer, numa linguagem fácil de entender foi um grande desafio proposto pelo projeto Crianças como Parceiras do Hospital do Câncer de Barretos.",
-				"A solução foi criar uma plataforma gamificada, em que é possível alunos, de 6 a 10 anos, de escolas de Ensino Fundamental, aprender por meio de atividades didáticas e interativas on line. São quebra-cabeças, caça-palavras, jogo dos 7 erros, pintura, entre outros exercícios que abordam diferentes assuntos, como Alimentação Saudável, Atividade Física, Saúde Bucal, Proteção Solar, Bebidas Alcoólicas, Exames Preventivos. ",
-				"A solução foi criar uma plataforma gamificada, em que é possível alunos, de 6 a 10 anos, de escolas de Ensino Fundamental, aprender por meio de atividades didáticas e interativas on line. São quebra-cabeças, caça-palavras, jogo dos 7 erros, pintura, entre outros exercícios que abordam diferentes assuntos, como Alimentação Saudável, Atividade Física, Saúde Bucal, Proteção Solar, Bebidas Alcoólicas, Exames Preventivos. "
+		"textos" : ["O projeto Crianças como Parceiras, idealizado pelo Hospital do Câncer de Barretos, tem como objetivo ensinar crianças os temas ligados à saúde como Atividade Física, Saúde Bucal e Proteção Solar. ",
+					"A solução encontrada para a implementação digital do projeto foi produzir uma plataforma com atividades gamificadas.",
+					"A Plataforma Educacional (LMS) possui sistemas de acompanhamento por meio de resultados obtidos ao realizar as atividades on-line. Parâmetros como número de acertos, tempo de realização e número de acessos são facilmente observados em relatórios gerados automaticamente.<br/ >Além disso possui meios de comunicação entre os usuários e compartilhamento de conteúdo adicional às atividades .",
+					"Os exercícios funcionam como fases de um jogo dentro de cada tema que, ao finalizar, o estudante ganha uma medalha referente as atividades. As atividades são caças-palavras, quebra-cabeças, labirintos, ligue os pontos, etc., todos ilustradas por Fernando Siniscalchi.",
+					"A aplicação do projeto se estende a alunos de rede pública e particular de 1º a 5º anos."
 				],
 		"slides" :[
 			{
-				"imagem":"portfolio_HCB.png",
-				"descricao":"jhdsh   hd s ihd sai d saih d sauh dsaioj d sahj 1"
+				"imagem":"cruzadinha.gif",
+				"descricao":"Atividade de cruzadinha sobre exercícios físicos"
 			},
 			{
-				"imagem":"portfolio_HCB.png",
-				"descricao":"jhdsh   hd s ihd sai d saih d sauh dsaioj d sahj 2"
+				"imagem":"escova.gif",
+				"descricao":"Atividade de escovação dos dentes"
 			},
 			{
-				"imagem":"portfolio_HCB.png",
-				"descricao":"jhdsh   hd s ihd sai d saih d sauh dsaioj d sahj 3"
+				"imagem":"colorir.gif",
+				"descricao":"Atividade de colorir, sobre exercícios físicos"
 			},
 			{
-				"imagem":"portfolio_HCB.png",
-				"descricao":"jhdsh   hd s ihd sai d saih d sauh dsaioj d sahj 4"
+				"imagem":"saude_bucal.gif",
+				"descricao":"Atividade de objetos escondidos sobre saúde bucal"
 			},
 			{
-				"imagem":"portfolio_HCB.png",
-				"descricao":"jhdsh   hd s ihd sai d saih d sauh dsaioj d sahj 5"
+				"imagem":"ligar_pontos2.gif",
+				"descricao":"Atividade de ligar os pontos, sobre proteção solar"
 			},
 			{
-				"imagem":"portfolio_HCB.png",
-				"descricao":"jhdsh   hd s ihd sai d saih d sauh dsaioj d sahj 6"
+				"imagem":"conta.gif",
+				"descricao":"Atividade de matemática sobre exercícios físicos"
 			},
 			{
-				"imagem":"portfolio_HCB.png",
-				"descricao":"jhdsh   hd s ihd sai d saih d sauh dsaioj d sahj 7"
+				"imagem":"slide_praia.gif",
+				"descricao":"Atividade sobre proteção solar"
 			}
 
 		],
-		"imagens" : ["portfolio_HCB.png","portfolio_HCB.png","portfolio_HCB.png"]
+		"imagens" : ["inicio_aluno.JPG","abertura_capitulo_1_aluno.JPG","atividade_capitulo_1_aluno.JPG"]
 	}
 }

@@ -125,8 +125,13 @@
 	background-color:white;
 	top:65px;
 	left:0;
-	/* display:none; */
+	display:none;
 	overflow-x:hidden;
+
+	.conteudo{
+		max-width:850px;
+		margin: 0 auto;
+	}
 
 	.banner{
 		/* width:100%; */
@@ -141,7 +146,7 @@
 		/* width:100%; */
 		text-align: center;
 		padding: 10px 0;
-		margin:10px 0;
+		margin:20px 0;
 		
 		
 
@@ -155,7 +160,7 @@
 
 	.imagem{
 		text-align: center;
-		margin:10px 0;
+		margin:20px 0;
 		
 		
 
@@ -166,10 +171,14 @@
 	}
 
 	.titulo{
-		color: $Titulo-Cor-Laranja;
 		
-		margin:10px 0 0px;
-		font-size:18px;
+		margin:20px 0 0px;
+
+		.conteudo{
+			
+			color: $Titulo-Cor-Laranja;
+			font-size:18px;
+		}
 		
 		
 	}
@@ -177,34 +186,43 @@
 	.tituloCinza{
 		/* width:100%; */
 		height:auto;
-		font-size: 18px;
-		color:$Titulo-Cor-Cinza;
-		font-weight: 400;
-		text-transform: uppercase;
-		margin:10px 0 0px;
-		text-align: center;
+		margin:20px 0 0px;
+
+		.conteudo{
+			
+			font-size: 18px;
+			color:$Titulo-Cor-Cinza;
+			font-weight: 400;
+			text-transform: uppercase;
+			text-align: center;
+		}
 		
 		
 	}
 
 	.texto{
 		height:auto;
-		margin:10px 0;
+		margin:20px 0;
+		font-size: 16px;
 		
 		
 	}
 
 	.btnSair{
-		height:40px;
-		background-color:$Titulo-Cor-Cinza;
-		margin:10px 0;
-		text-align:center;
-		padding-top:5px;
-		color:#FFF;
-		font-weight: 400;
-		cursor:pointer;
-		/* font-size: 16px; */
-		font-size: 21px;
+		margin:20px 0;
+
+		.conteudo{
+			
+			height:40px;
+			background-color:#EDEDED;
+			/* color:#FFF; */
+			text-align:left;
+			/* font-weight: 400; */
+			cursor:pointer;
+
+			font-size: 17px;
+    		padding: 9px 20px;
+		}
 		
 		
 	}
@@ -212,10 +230,15 @@
 
 	.slider{
 		height:auto;
-		max-width: 1024px;
-		margin:10px 0;
+		/* max-width: 1024px; */
+		margin:20px 0;
 
 		*{padding:0;}
+
+		.conteudo{
+			max-width:1024px;
+			margin: 0 auto;
+		}
 
 		.menuSuperior{
 			height:20px;
@@ -230,6 +253,7 @@
 			background-position: 25%, center;
 			background-size: 45% auto;
 			background-repeat: no-repeat;
+			margin-top: 20%;
 
 			&.left{
 				-moz-transform: rotate(180deg);
@@ -240,7 +264,6 @@
 
 		.slideShow{
 			height:auto;
-			background-color:pink;
 			overflow-x: hidden;
 
 			.wrapperSlide{
@@ -298,7 +321,18 @@
 		}
 
 		.tituloCinza{
-			font-size: 28px;
+			.conteudo{
+				font-size: 28px;
+			}
+		}
+
+		.slider{
+			.arrow{
+				background-size: 25% auto;
+
+				
+
+			}
 		}
 	}
 	

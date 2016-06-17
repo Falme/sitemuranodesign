@@ -109,6 +109,11 @@ html, body
 	font-family:$museo-slab;
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 /* .Banner2{
 	width:100%;

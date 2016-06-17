@@ -198,16 +198,16 @@
     for(var a=0; a<lng;a++){
 
       if(a < db.titulos.length)
-        $($("#floatPortfolio .titulo").get(a)).html(db.titulos[a]);
+        $($("#floatPortfolio .titulo .conteudo").get(a)).html(db.titulos[a]);
       
       if(a < db.titulosCinzas.length)
-        $($("#floatPortfolio .tituloCinza").get(a)).html(db.titulosCinzas[a]);
+        $($("#floatPortfolio .tituloCinza .conteudo").get(a)).html(db.titulosCinzas[a]);
       
       if(a < db.textos.length)
-        $($("#floatPortfolio .texto").get(a)).html(db.textos[a]);
+        $($("#floatPortfolio .texto .conteudo").get(a)).html(db.textos[a]);
       
       if(a < db.imagens.length)
-        $($("#floatPortfolio .imagem").get(a)).find("img").attr("src", "images/Portfolio/"+db.imagens[a]);
+        $($("#floatPortfolio .imagem .conteudo").get(a)).find("img").attr("src", "images/Portfolio/"+db.imagens[a]);
       
       if(a < db.slides.length){
         $("#floatPortfolio .slider .wrapperSlide").append('<img src="" alt="">');
