@@ -104,7 +104,7 @@ var PageVars = {
 		{
 			"nome":"Plataforma educacional crianças como parceiras",
 			"tags":["Plataforma", "Web Design", "Objetos Digitais", "Ilustração"],
-			"ref":"criancas.png",
+			"ref":"HCB.png",
 			"link":"HCB",
 			"size":[12,12,6]
 		}

@@ -3,7 +3,6 @@
 		"ordem" : [
 			"banner", 
 			"logo", 
-			"tituloCinza", 
 			"texto", 
 			"texto", 
 			"imagem",
@@ -17,7 +16,7 @@
 			"texto", 
 			"Sair"
 			],
-		"banner":"portfolio_HCB.png",
+		"banner":["criancasVoadoras.png","cidadeCapa.png"],
 		"logo":"logo_HCB.png",
 		"titulos" :["Plataforma","Atividades"],
 		"titulosCinzas" :["Plataforma educacional crianças como parceiras"],
@@ -41,10 +40,6 @@
 				"descricao":"Atividade de colorir, sobre exercícios físicos"
 			},
 			{
-				"imagem":"saude_bucal.gif",
-				"descricao":"Atividade de objetos escondidos sobre saúde bucal"
-			},
-			{
 				"imagem":"ligar_pontos2.gif",
 				"descricao":"Atividade de ligar os pontos, sobre proteção solar"
 			},
@@ -54,7 +49,7 @@
 			},
 			{
 				"imagem":"slide_praia.gif",
-				"descricao":"Atividade sobre proteção solar"
+				"descricao":"Atividade sobre exposição aos raios solares"
 			}
 
 		],
