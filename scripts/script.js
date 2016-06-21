@@ -60,12 +60,12 @@ var PageVars = {
 				{"Nome":"Dora",			"NomeCompleto":"Dora Murano",			"X": [(463-55)+"","375"],		"Y":["206","15"],	"Width":["150","179"],	"Texto":"Ligada 24/7, entusiasta de <br/> novas tecnologias, garimpa <br/> oportunidades incríveis."	},
 				{"Nome":"Nilton",		"NomeCompleto":"Nilton Leme",			"X": [(222-55)+"","185"],		"Y":["271","167"],	"Width":["110","135"],	"Texto":"Nosso cara de TI, que também coloca a mão na massa quando o assunto é negócio."	},
 				{"Nome":"Carol",		"NomeCompleto":"Carol Ferreira",		"X": [(806-55)+"","397"],		"Y":["438","283"],	"Width":["145","162"],	"Texto":"Essa mineirinha é fera em linguagem de programação. Comprometida, faz a diferença em todos os projetos que participa."	},
-				{"Nome":"Pedro",		"NomeCompleto":"Pedro Henrique",		"X": [(360-55)+"","210"],		"Y":["435","375"],	"Width":["100","157"],	"Texto":"O menino do Debugger, mestre no CookieClicker, ta mt frio to bolado"	},
-				{"Nome":"Fernando",		"NomeCompleto":"Fernando Siniscalchi",			"X": [(813-55)+"","567"],		"Y":["466","418"],	"Width":["200","138"],	"Texto":"Jovem <i>padawan</i> das artes milenares e ocultas da programação. Poliglota em <i>coding</i>, com fluência em Java, C#, C e ‘imbromeition’ em vb6 e javascript."	},
-				{"Nome":"Bruno",		"NomeCompleto":"Bruno Ahn",				"X": [(428-55)+"","200"],		"Y":["613","571"],	"Width":["125","106"],	"Texto":"Aprende tudo muito rápido e está sempre atento. Designer versátil, gosta de produção audiovisual, diagramação e programação."	},
+				{"Nome":"Pedro",		"NomeCompleto":"Pedro Henrique",		"X": [(360-55)+"","210"],		"Y":["435","375"],	"Width":["100","157"],	"Texto":"Front end e back end, sente-se confortável em aprender e manipular o que for possível."	},
+				//{"Nome":"Fernando",		"NomeCompleto":"Fernando Siniscalchi",			"X": [(813-55)+"","567"],		"Y":["466","418"],	"Width":["200","138"],	"Texto":"Jovem <i>padawan</i> das artes milenares e ocultas da programação. Poliglota em <i>coding</i>, com fluência em Java, C#, C e ‘imbromeition’ em vb6 e javascript."	},
+				{"Nome":"Bruno",		"NomeCompleto":"Bruno Ahn",				"X": [(428-55)+"","200"],		"Y":["613","571"],	"Width":["125","106"],	"Texto":"Animação, edição e pós-produção. Motion Graphics é a sua praia."	},
 				{"Nome":"Diego",		"NomeCompleto":"Diego Garcia",			"X": [(479-55)+"","364"],		"Y":["10","15"],	"Width":["180","189"],	"Texto":"Imaginativo e apaixonado, gosta de presenciar pequenos milagres que fazem um código funcionar."	},
 				{"Nome":"Rogerio",		"NomeCompleto":"Rogério Santos",		"X": [(700-55)+"","491"],		"Y":["580","849"],	"Width":["125","208"],	"Texto":"Nosso arquiteto de soluções. Profissional incansável na busca de novas tecnologias. Conectado 24 horas por dia, entusiasma a todos em cada projeto que participa."	},
-				{"Nome":"Lucas",		"NomeCompleto":"Lucas Tavares",			"X": [(96-55)+"","66"],			"Y":["430","418"],	"Width":["115","102"],	"Texto":"Animação, edição e pós-produção. Motion Graphics é a sua praia."	},
+				{"Nome":"Lucas",		"NomeCompleto":"Lucas Tavares",			"X": [(96-55)+"","66"],			"Y":["430","418"],	"Width":["115","102"],	"Texto":"Aprende tudo muito rápido e está sempre atento. Designer versátil, gosta de produção audiovisual, diagramação e programação."	},
 				{"Nome":"Fabio",		"NomeCompleto":"Fabio Carvalho",		"X": [(55-55)+"","299"],		"Y":["458","743"],	"Width":["165","149"],	"Texto":"Talentoso programador de web e games, nosso Kenny G dos códigos."	},
 				{"Nome":"Vitor",		"NomeCompleto":"Vitor Murano",			"X": [(428-55)+"","436"],		"Y":["55","855"],	"Width":["120","233"],	"Texto":"Admirador de práticas pedagógicas inovadoras, acompanha a implantação de projetos dentro das escolas sempre com disposição e bom-humor."	},
 				{"Nome":"Alessandra",	"NomeCompleto":"Alessandra Stradiotto",	"X": [(814-55)+"","47"],		"Y":["409","863"],	"Width":["170","214"],	"Texto":"Entende muito de experiência do usuário e adora caçar bugs, garantindo o controle de qualidade."	},
@@ -771,26 +771,23 @@ return false;
 		//createLine('Lucas','Fabio', 'Lucas Rafael Fabio');
 
 		createLine('Nilton','Rafael', "Nilton");
-		createLine('Nilton','Pedro', "Nilton");
+		//createLine('Nilton','Pedro', "Nilton");
 		createLine('Nilton','Dora');
 
-		createLine('Dora','Pedro', "Dora");
+		//createLine('Dora','Pedro', "Dora");
 		createLine('Dora','Carol', "Dora");
 		createLine('Dora','Alessandra');
 
 		createLine('Alessandra','Carol', "Alessandra");
-		createLine('Alessandra','Fernando', 'Alessandra');
+		createLine('Alessandra','Pedro', 'Alessandra');
 
 		//createLine('Rafael','Fabio');
-		createLine('Rafael','Pedro');
+		createLine('Rafael','Carol');
 		createLine('Rafael','Bruno');
 		createLine('Rafael','Rogerio', "Rafael");
 
-		createLine('Pedro','Rogerio','Pedro');
-		createLine('Pedro','Carol');
 
-		createLine('Carol','Rogerio','Pedro');
-		createLine('Carol','Fernando', "Carol");
+		createLine('Carol','Pedro', "Carol");
 
 		createLine('Fabio','Diego');
 		createLine('Fabio','Dora', "Diego");
@@ -798,7 +795,8 @@ return false;
 
 		createLine('Bruno','Rogerio');
 
-		createLine('Rogerio','Fernando');
+		createLine('Rogerio','Pedro');
+		createLine('Rogerio','Carol');
 
 	}
 
@@ -818,31 +816,31 @@ return false;
 		createLine('Diego','Carol');
 		
 		createLine('Lucas','Nilton');
-		createLine('Lucas','Pedro');
+		//createLine('Lucas','Pedro');
 		createLine('Lucas','Bruno', "Lucas");
 
 		//createLine('Nilton','Rafael', "Carol Rafael");
 		createLine('Nilton','Carol');
 		createLine('Nilton','Pedro', "Nilton");
-		createLine('Nilton','Fernando', "Nilton");
 
 		createLine('Carol','Rafael');
-		createLine('Carol','Fernando', "Carol");
+		createLine('Carol','Pedro', "Carol");
 
-		createLine('Rafael','Fernando', "Rafael");
-		createLine('Rafael','Vitor', "Fernando Rafael");
+		createLine('Rafael','Pedro', "Rafael");
+		createLine('Rafael','Vitor', "Pedro Rafael");
 
 		createLine('Bruno','Pedro');
 		createLine('Bruno','Fabio');
+		createLine('Bruno','Nilton', "Nilton Lucas");
 		createLine('Bruno','Alessandra' , "Bruno");
 
-		createLine('Pedro','Fernando');
+		
+		//createLine('Pedro','Fabio', "Pedro");
+
+
+
 		createLine('Pedro','Fabio', "Pedro");
-
-
-
-		createLine('Fernando','Fabio', "Fernando Pedro");
-		createLine('Fernando','Vitor', "Fernando");
+		createLine('Pedro','Vitor', "Pedro");
 
 		//createLine('Pedro','Felipe', "Felipe");
 		//createLine('Pedro','Fabio');

@@ -18,18 +18,6 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/MuranoDesign-Ico.ico">
 
-    <script>
-      if ('registerElement' in document
-        && 'createShadowRoot' in HTMLElement.prototype
-        && 'import' in document.createElement('link')
-        && 'content' in document.createElement('template')) {
-        // We're using a browser with native WC support!
-      } else {
-        document.write('<script src="https:\/\/cdnjs.cloudflare.com/ajax/libs/polymer/0.3.4/platform.js"><\/script>')
-      }
-    </script>
-    <link rel="import" href="scripts/dist/x-gif.html">
-
     <?php  header("Content-Type: text/html;charset=UTF-8"); ini_set('display_errors', '0'); error_reporting(E_ERROR | E_WARNING | E_PARSE); ?>
 
   </head>
@@ -231,9 +219,9 @@
         $($("#floatPortfolio .imagem .conteudo").get(a)).find("img").attr("src", "images/Portfolio/"+db.imagens[a]);
       
       if(a < db.slides.length){
-        $("#floatPortfolio .slider .wrapperSlide").append('<x-gif src="" alt=""></x-gif>');
-        $($("#floatPortfolio .slider .wrapperSlide x-gif").get(a)).attr("src", "images/Portfolio/"+db.slides[a].imagem);
-        $($("#floatPortfolio .slider .wrapperSlide x-gif").get(a)).css("width",(100/(db.slides.length))+"%");
+        $("#floatPortfolio .slider .wrapperSlide").append('<img src="" alt="">');
+        $($("#floatPortfolio .slider .wrapperSlide img").get(a)).attr("src", "images/Portfolio/"+db.slides[a].imagem);
+        $($("#floatPortfolio .slider .wrapperSlide img").get(a)).css("width",(100/(db.slides.length))+"%");
       }
     }
 

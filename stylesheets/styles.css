@@ -12952,7 +12952,7 @@ html, body {
   width: 125px;
   height: 125px;
   margin: 0 auto;
-  background-image: url("../images/sprite-group_15.png");
+  background-image: url("../images/sprite-group_16.png");
   background-position: 1px -125px;
   background-size: 1400%;
 }
@@ -13115,12 +13115,13 @@ html, body {
   #containerGrupo .Pessoa {
     width: 125px;
     height: 124px;
-    background-image: url("../images/sprite-group_16_1.png");
+    background-image: url("../images/sprite-group_16.png");
     z-index: 4;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
     /*&.Felipe		{	background-position: (((125*10)*-1)-1)+px -125px ;	top:558px;	left:532px;	}*/
+    /* &.Fernando		{	background-position: (((125*13)*-1)-1)+px -125px ;	top:447px;	left:240px;	&.Moved{  top:(418+50)+px;}} */
     /* &.Julia			{	background-position: (((125*0)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 0, 0, "Y")+px;		left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 0, 0, "X")+px;	}
     &.Dora			{	background-position: (((125*1)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 100, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 100, "X")+px;	}
     &.Nilton		{	background-position: (((125*2)*-1)-1)+px -125px ;	top:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 200, "Y")+px;	left:GetPositionRadius($CentroTabletLeft, $CentroTabletTop, 200, 200, "X")+px;	}
@@ -13179,26 +13180,16 @@ html, body {
   /* line 244, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Pedro {
     background-position: -501px -125px;
-    top: 447px;
-    left: 240px;
+    top: 418px;
+    left: 427px;
   }
   /* line 244, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Pedro.Moved {
     top: 497px;
   }
-  /* line 245, ../sass/pages/group.scss */
-  #containerGrupo .Pessoa.Fernando {
-    background-position: -626px -125px;
-    top: 418px;
-    left: 427px;
-  }
-  /* line 245, ../sass/pages/group.scss */
-  #containerGrupo .Pessoa.Fernando.Moved {
-    top: 468px;
-  }
   /* line 246, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Bruno {
-    background-position: -751px -125px;
+    background-position: -626px -125px;
     top: 523px;
     left: 64px;
   }
@@ -13208,7 +13199,7 @@ html, body {
   }
   /* line 247, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Diego {
-    background-position: -876px -125px;
+    background-position: -751px -125px;
     top: 45px;
     left: 540px;
   }
@@ -13218,7 +13209,7 @@ html, body {
   }
   /* line 248, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Rogerio {
-    background-position: -1001px -125px;
+    background-position: -876px -125px;
     top: 806px;
     left: 390px;
   }
@@ -13228,7 +13219,7 @@ html, body {
   }
   /* line 249, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Lucas {
-    background-position: -1126px -125px;
+    background-position: -1001px -125px;
     top: 314px;
     left: 43px;
   }
@@ -13238,7 +13229,7 @@ html, body {
   }
   /* line 250, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Fabio {
-    background-position: -1251px -125px;
+    background-position: -1126px -125px;
     top: 627px;
     left: 306px;
   }
@@ -13248,7 +13239,7 @@ html, body {
   }
   /* line 251, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Vitor {
-    background-position: -1376px -125px;
+    background-position: -1251px -125px;
     top: 638px;
     left: 522px;
   }
@@ -13258,7 +13249,7 @@ html, body {
   }
   /* line 252, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Alessandra {
-    background-position: -1501px -125px;
+    background-position: -1376px -125px;
     top: 737px;
     left: 68px;
   }
@@ -13268,7 +13259,7 @@ html, body {
   }
   /* line 253, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Rafael {
-    background-position: -1626px -125px;
+    background-position: -1501px -125px;
     top: 252px;
     left: 565px;
   }
@@ -13319,11 +13310,12 @@ html, body {
     float: left;
     margin-right: 2px;
     position: absolute;
-    background-image: url("../images/sprite-group_15.png");
+    background-image: url("../images/sprite-group_16.png");
     z-index: 4;
     border-radius: 50%;
     cursor: pointer;
     /*&.Felipe		{	background-position: (((125*10)*-1)-1)+px -125px ;	top:80px;	left:(766-55)+px;	}*/
+    /* &.Fernando		{	background-position: (((125*13)*-1)-1)+px -125px ;	top:476px;	left:(465-55)+px; 	 &.Moved{ top:(582+50)+px;}} */
   }
   /* line 313, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Julia {
@@ -13368,26 +13360,16 @@ html, body {
   /* line 317, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Pedro {
     background-position: -501px -125px;
-    top: 476px;
-    left: 410px;
+    top: 662px;
+    left: 788px;
   }
   /* line 317, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Pedro.Moved {
     top: 476px;
   }
-  /* line 318, ../sass/pages/group.scss */
-  #containerGrupo .Pessoa.Fernando {
-    background-position: -626px -125px;
-    top: 662px;
-    left: 788px;
-  }
-  /* line 318, ../sass/pages/group.scss */
-  #containerGrupo .Pessoa.Fernando.Moved {
-    top: 632px;
-  }
   /* line 319, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Bruno {
-    background-position: -751px -125px;
+    background-position: -626px -125px;
     top: 609px;
     left: 60px;
   }
@@ -13397,7 +13379,7 @@ html, body {
   }
   /* line 320, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Diego {
-    background-position: -876px -125px;
+    background-position: -751px -125px;
     top: 80px;
     left: 491px;
   }
@@ -13407,7 +13389,7 @@ html, body {
   }
   /* line 321, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Rogerio {
-    background-position: -1001px -125px;
+    background-position: -876px -125px;
     top: 672px;
     left: 405px;
   }
@@ -13417,7 +13399,7 @@ html, body {
   }
   /* line 322, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Lucas {
-    background-position: -1126px -125px;
+    background-position: -1001px -125px;
     top: 339px;
     left: 33px;
   }
@@ -13427,7 +13409,7 @@ html, body {
   }
   /* line 323, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Fabio {
-    background-position: -1251px -125px;
+    background-position: -1126px -125px;
     top: 80px;
     left: 711px;
   }
@@ -13437,7 +13419,7 @@ html, body {
   }
   /* line 324, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Vitor {
-    background-position: -1376px -125px;
+    background-position: -1251px -125px;
     top: 55px;
     left: 245px;
   }
@@ -13447,7 +13429,7 @@ html, body {
   }
   /* line 325, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Alessandra {
-    background-position: -1501px -125px;
+    background-position: -1376px -125px;
     top: 277px;
     left: 735px;
   }
@@ -13457,7 +13439,7 @@ html, body {
   }
   /* line 326, ../sass/pages/group.scss */
   #containerGrupo .Pessoa.Rafael {
-    background-position: -1626px -125px;
+    background-position: -1501px -125px;
     top: 470px;
     left: 211px;
   }
