@@ -250,6 +250,10 @@
       $("#floatPortfolio .slider .slideShow .wrapperSlide").css("left",((PageVars.SliderPortfolioPos*100)*-1)+"%");
 
       $("#floatPortfolio .slider .comment").html(db.slides[PageVars.SliderPortfolioPos].descricao);
+
+
+      $($('#floatPortfolio .slider .slideShow .wrapperSlide img').get(PageVars.SliderPortfolioPos)).attr("src", $($('#floatPortfolio .slider .slideShow .wrapperSlide img').get(PageVars.SliderPortfolioPos)).attr("src"))
+
     });
 
 
